@@ -11,3 +11,9 @@ LABEL "maintainer"="Octocat <octocat@github.com>"
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
+
+#!/bin/sh -l
+
+sh -c "echo $*"
+
+chmod +x action-a/entrypoint.sh
