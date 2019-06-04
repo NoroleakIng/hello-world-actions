@@ -16,10 +16,3 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 sh -c "echo $*"
 
-chmod +x action-a/entrypoint.sh
-
-Stage and commit the change:
-
-git add action-a/entrypoint.sh
-
-git commit -m "make entrypoint script executable"
